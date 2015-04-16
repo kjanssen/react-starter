@@ -1,6 +1,10 @@
-// react.jsx
+// app.jsx
 'use strict';
 
 var React  = require('react');
+var Router = require('react-router');
+var routes = require('./routes');
 
-React.render(<p>Hello world</p>, document.body);
+Router.run(routes, function(Handler, state) {
+    React.render(<Handler/>, document.body);
+});
