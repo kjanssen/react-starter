@@ -17,6 +17,7 @@ on the screen, and one full page app with a sidebar. They live in `src-centered`
 respectively. The active one can be switched with one of the following commands:
 
 `ln -sfT src-centered src`
+
 `ln -sfT src-fullpage-with-sidebar src`
 
 Check them both out, and when you decide on one, just get rid of the symbolic link and rename that
