@@ -1,17 +1,17 @@
-// Container.jsx
+// AppContainer.jsx
 'use strict';
 
 var React           = require('react');
 var RouteHandler    = require('react-router').RouteHandler;
 
-var Container = React.createClass({
+var AppContainer = React.createClass({
     render: function() {
         return (
-            <div className='Container container'>
+            <div className='AppContainer container'>
                 <RouteHandler/>
             </div>
         );
     }
 });
 
-module.exports = Container;
+module.exports = AppContainer;

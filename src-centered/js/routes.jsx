@@ -8,11 +8,11 @@ var DefaultRoute = Router.DefaultRoute;
 var Redirect     = Router.Redirect;
 
 // views
-var Container    = require('./components/Container');
+var AppContainer = require('./components/AppContainer');
 var HomeView     = require('./components/HomeView');
 
 var routes = (
-    <Route path='/' handler={Container}>
+    <Route path='/' handler={AppContainer}>
         <DefaultRoute name='home' handler={HomeView}/>
     </Route>
 );
