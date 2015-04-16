@@ -12,9 +12,16 @@ and I've found using them helpful in building UI that 'just works'.
 It also contains the initial setup for [react-router](https://github.com/rackt/react-router),
 making adding new pages and managing front-end navigation much easier.
 
+## Use
+
 Simply run `npm install` to get the necessary packages and `gulp build` to create
 the public directory. Then, serve the files up however you want. [http-server](https://github.com/indexzero/http-server)
 is a good option if you just want a local static server.
 
 Once the packages is built and served, a simple 'hello world' will be displayed in
 the browser using React.
+
+Adapting this starter project to your own project is simply a matter of nuking (`rm -rf`) the
+`.git` directory and initializing your own git repo (or not, that's up to you). The
+`Container` and `HomeView` react components are the entry point to the app. Modify
+or replace them as you will.
