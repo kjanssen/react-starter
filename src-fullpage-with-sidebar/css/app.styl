@@ -8,6 +8,8 @@ $color-light-neutral-accent = #DDD
 $color-medium-neutral-accent = #AAA
 $color-dark-neutral-accent = #888
 
+$width-sidebar = 250px
+
 html,
 body,
 .AppContainer {
@@ -17,14 +19,14 @@ body,
 }
 
 .AppContainer {
-    padding-left: 250px;
+    padding-left: $width-sidebar;
     transition: all 0.4s ease 0s;
 }
 
 .sidebar {
-    margin-left: -250px;
-    left: 250px;
-    width: 250px;
+    margin-left: -($width-sidebar);
+    left: $width-sidebar;
+    width: $width-sidebar;
     background: $color-medium-accent;
     color: $color-text-accent;
     position: fixed;
@@ -50,12 +52,12 @@ body,
 
     .AppContainer.active {
         position: relative;
-        left: 250px;
+        left: $width-sidebar;
     }
 
     .AppContainer.active .sidebar {
-        left: 250px;
-        width: 250px;
+        left: $width-sidebar;
+        width: $width-sidebar;
         transition: all 0.4s ease 0s;
     }
 }
