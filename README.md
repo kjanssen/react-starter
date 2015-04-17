@@ -29,7 +29,7 @@ Simply run `npm install` to get the necessary packages and `gulp build` to creat
 the public directory. Then, serve the files up however you want. [http-server](https://github.com/indexzero/http-server)
 is a good option if you just want a local static server.
 
-Once the packages is built and served, a simple 'hello world' will be displayed in
+Once the package is built and served, a simple 'hello world' will be displayed in
 the browser using React.
 
 Adapting this starter project to your own project is simply a matter of nuking (`rm -rf`) the
