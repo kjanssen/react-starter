@@ -19,10 +19,11 @@ var production = process.env.PRODUCTION || false;
 // Define some paths.
 var paths = {
   src: {
-    index:  ['./src/index.html'],
-    css:    ['./src/css/**/*.css', './src/css/**/*.styl'],
-    app_js: ['./src/js/app.jsx'],
-    js:     ['./src/js/**/*.js', './src/js/**/*.jsx']
+    index:      ['./src/index.html'],
+    app_css:    ['./src/css/app.styl'],
+    css:        ['./src/css/**/*'],
+    app_js:     ['./src/js/app.jsx'],
+    js:         ['./src/js/**/*.js', './src/js/**/*.jsx']
   },
   dest: {
     index:  'public',
@@ -36,9 +37,8 @@ gulp.task('clean', function(done) {
 });
 
 gulp.task('css', ['clean'], function() {
-  return gulp.src(paths.src.css)
-    .pipe(stylus())
-    .pipe(concat('app.css'))
+  return gulp.src(paths.src.app_css)
+    .pipe(stylus({'include css': true}))
     .pipe(gulpif(production, minifyCSS()))
     .pipe(gulp.dest(paths.dest.css));
 });
