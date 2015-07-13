@@ -25,12 +25,20 @@ source folder to `src`.
 
 ## Use
 
+### Browser
+
 Simply run `npm install` to get the necessary packages and `gulp build` to create
 the public directory. Then, serve the files up however you want. [http-server](https://github.com/indexzero/http-server)
 is a good option if you just want a local static server.
 
 Once the package is built and served, a simple 'hello world' will be displayed in
 the browser using React.
+
+### Electron
+
+This app can become a desktop app using [Electron](http://electron.atom.io/) by installing
+the `electron` command globally with `npm install electron-prebuilt -g` and running `electron .`
+from the project's root directory.
 
 Adapting this starter project to your own project is simply a matter of nuking (`rm -rf`) the
 `.git` directory and initializing your own git repo (or not, that's up to you). The
