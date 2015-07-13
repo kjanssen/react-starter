@@ -2,7 +2,7 @@
   "name": "",
   "version": "",
   "description": "",
-  "main": "",
+  "main": "main.js",
   "dependencies": {
     "react": "^0.12.2",
     "react-bootstrap": "^0.16.1",
